@@ -1,5 +1,5 @@
 # Pendahuluan - OOP Dasar
-prosedural  Programming :
+Prosedural  Programming :
 - instrusksi langkah demi langkah
 - memecah program menjadi bagian kecil
 - linier / top to bottom
