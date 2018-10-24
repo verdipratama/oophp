@@ -1,6 +1,7 @@
 <?php
-	// Inheritance dapat menghubungkan antar class (parent & child)
-	// child class mewarisi semua property dan method dari parentnya yang visble (public, private, protected)
+	// Inheritance = menghubungkan antar class (parent & child)
+	// child class mewarisi semua property dan method dari parentnya yang visible (public, private, protected)
+	// extends (memperluas) fungsionalitas dari parentnya
 	class Produk {
 		public $judul;
 		public $penulis;
@@ -36,20 +37,22 @@
 	// extends adalah fungsionalitas dari parentnya
 	// Membuat child class komik
 	class KOMIK extends Produk {
+		// Memanggil dan membuat method function getInfoProduk() untuk class KOMIK SAJA
 		public function getInfoProduk() {
 			// deklarasi string $str
 			// Panggil getlabel()
-			$str = " KOMIK : {$this->judul} | {$this->getLabel()} (Rp. {$this->harga} - {$this->jumlahhalaman} Halaman.)";
+			$str = " KOMIK : {$this->judul} | {$this->getLabel()} (Rp. {$this->harga} ~ {$this->jumlahhalaman} Halaman.)";
 			return $str;
 		}
 	}
 	// Membuat Inherintace
 	// Membuat child class FILM
 	class FILM extends Produk {
+		// Memanggil dan membuat method function getInfoProduk() untuk class FILM SAJA
 		public function getInfoProduk() {
 			// deklarasi string $str
 			// panggil getlabel()
-			$str = " FILM : {$this->judul} | {$this->getLabel()} (Rp. {$this->harga} - {$this->waktumain} JAM.)";
+			$str = " FILM : {$this->judul} | {$this->getLabel()} (Rp. {$this->harga} ~ {$this->waktumain} JAM.)";
 			return $str;
 		}
 	}
